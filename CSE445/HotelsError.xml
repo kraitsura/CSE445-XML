@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Error 1: Root element name is Hotel instead of Hotels -->
+<Hotel>
+  <Hotel Rating="4.2">
+    <n>Westin</n>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearstAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E.7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  
+  <!-- Error 2: Missing required NearstAirport attribute -->
+  <Hotel Rating="4.5">
+    <n>Marriott Phoenix Resort Tempe</n>
+    <Phone>480-894-1400</Phone>
+    <Address>
+      <Number>300</Number>
+      <Street>S Mill Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  
+  <!-- Error 3: Missing Phone element -->
+  <Hotel>
+    <n>Hyatt Place Phoenix/Mesa</n>
+    <Address NearstAirport="Phoenix-Mesa Gateway">
+      <Number>1422</Number>
+      <Street>W Bass Pro Dr</Street>
+      <City>Mesa</City>
+      <State>AZ</State>
+      <Zip>85201</Zip>
+    </Address>
+  </Hotel>
+  
+  <!-- Error 4: Address element has no closing tag -->
+  <Hotel Rating="3.8">
+    <n>Hilton Garden Inn Phoenix Downtown</n>
+    <Phone>602-257-9000</Phone>
+    <Address NearstAirport="Sky Harbor">
+      <Number>15</Number>
+      <Street>E Monroe St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+  </Hotel>
+  
+  <!-- Error 5: Two names provided for one hotel -->
+  <Hotel>
+    <n>DoubleTree by Hilton Phoenix Tempe</n>
+    <n>Second Name Should Not Be Here</n>
+    <Phone>480-967-1441</Phone>
+    <Phone>800-528-6481</Phone>
+    <Address NearstAirport="Sky Harbor">
+      <Number>2100</Number>
+      <Street>S Priest Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85282</Zip>
+    </Address>
+  </Hotel>
+  
+  <Hotel Rating="4.0">
+    <n>Sheraton Phoenix Downtown</n>
+    <Phone>602-262-2500</Phone>
+    <Address NearstAirport="Sky Harbor">
+      <Number>340</Number>
+      <Street>N 3rd St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+</Hotel>
