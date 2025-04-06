@@ -2,7 +2,7 @@
 <!-- Error 1: Root element name is Hotel instead of Hotels -->
 <Hotel>
   <Hotel Rating="4.2">
-    <n>Westin</n>
+    <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
     <Address NearstAirport="Sky Harbor">
@@ -16,7 +16,7 @@
   
   <!-- Error 2: Missing required NearstAirport attribute -->
   <Hotel Rating="4.5">
-    <n>Marriott Phoenix Resort Tempe</n>
+    <Name>Marriott Phoenix Resort Tempe</Name>
     <Phone>480-894-1400</Phone>
     <Address>
       <Number>300</Number>
@@ -29,7 +29,7 @@
   
   <!-- Error 3: Missing Phone element -->
   <Hotel>
-    <n>Hyatt Place Phoenix/Mesa</n>
+    <Name>Hyatt Place Phoenix/Mesa</Name>
     <Address NearstAirport="Phoenix-Mesa Gateway">
       <Number>1422</Number>
       <Street>W Bass Pro Dr</Street>
@@ -40,8 +40,10 @@
   </Hotel>
   
   <!-- Error 4: Address element has no closing tag -->
+  <!-- Note: This will cause XML parsing errors, but it's required for the assignment -->
+  <!-- I'm using a comment here to indicate where the error should be -->
   <Hotel Rating="3.8">
-    <n>Hilton Garden Inn Phoenix Downtown</n>
+    <Name>Hilton Garden Inn Phoenix Downtown</Name>
     <Phone>602-257-9000</Phone>
     <Address NearstAirport="Sky Harbor">
       <Number>15</Number>
@@ -49,12 +51,13 @@
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85004</Zip>
+    <!-- Missing closing Address tag is intentional for Error #4 -->
   </Hotel>
   
   <!-- Error 5: Two names provided for one hotel -->
   <Hotel>
-    <n>DoubleTree by Hilton Phoenix Tempe</n>
-    <n>Second Name Should Not Be Here</n>
+    <Name>DoubleTree by Hilton Phoenix Tempe</Name>
+    <Name>Second Name Should Not Be Here</Name>
     <Phone>480-967-1441</Phone>
     <Phone>800-528-6481</Phone>
     <Address NearstAirport="Sky Harbor">
@@ -67,7 +70,7 @@
   </Hotel>
   
   <Hotel Rating="4.0">
-    <n>Sheraton Phoenix Downtown</n>
+    <Name>Sheraton Phoenix Downtown</Name>
     <Phone>602-262-2500</Phone>
     <Address NearstAirport="Sky Harbor">
       <Number>340</Number>
